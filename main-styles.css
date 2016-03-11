@@ -24,14 +24,16 @@ body {
 	font-size: 16px;
 	text-shadow: 0.2px 1.5px gray;
 }
+h1, p {
+	color: white;
+}
 h1 {
 	font-size: 37px;
 } 
 p {
-	font-size: 22px;
-}
-.text-colour {
 	color: white;
+	font-size: 22px;
+	padding-top: 10px;
 }
 #main-wrapper {
 	width: 100%;
@@ -80,8 +82,7 @@ header {
 	margin-right: 15px;
 }
 #header-nav-bar a:hover {
-	background-color: rgba(25, 25, 25, .5);
-	opacity: 0.5;
+	background-color: rgba(25, 25, 25, 0.5);
 }
 /* ============================================================
   MIDDLE SECTION
@@ -96,34 +97,38 @@ header {
     right: 0;
     margin: auto;
 }
-#middle-content {
+.mid-content {
 	position: absolute;
-	width: 371px;
-	height: 144px;
+	width: 841px;
+	height: 377px;
 	top: 0;
 	bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
 	text-align: center;
-
+	display: none;
 }
 .button {
 	font-size: 16px;
 	padding: 10px 10px 10px 10px;
 	background-color: Transparent;
+	color: white;
 }
-#middle-content ul {
+.mid-content ul {
 	list-style-type: none;
 	margin: 16px;
     padding: 0;
 }
-#middle-content li {
+.mid-content li {
 	display: inline-block;
 }
-#middle-content li button {
+.mid-content li button {
     border: 1.5px solid #F2E7E4;
-		text-shadow: 0.2px 2px gray;
+	text-shadow: 0.2px 2px gray;
+}
+.active {
+	display: block;
 }
 /* ============================================================
   THE FOOTER
