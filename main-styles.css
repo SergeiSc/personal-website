@@ -1,0 +1,165 @@
+@charset "utf-8";
+/* ============================================================
+  COMMON
+============================================================ */
+body, html, .container {
+	height: 100%;
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+body {
+	font-family: Verdana,sans-serif;
+	font-size: 16px;
+	text-shadow: 0.2px 1.5px gray;
+}
+h1 {
+	font-size: 37px;
+} 
+p {
+	font-size: 22px;
+}
+.text-colour {
+	color: white;
+}
+#main-wrapper {
+	width: 100%;
+	position: absolute;
+	height: 100%;
+}
+/* ============================================================
+  BACKGROUND
+============================================================ */
+.bg-image {
+	width: 100%;
+	position: absolute;
+	height: 100%;
+}
+#bg { position: fixed; top: 0; left: 0; }
+.bgwidth { width: 100%; }
+.bgheight { height: 100%; }
+/* ============================================================
+  HEADER
+============================================================ */
+header {
+	position: absolute;
+	height: 49px;
+	width: 100%;
+}
+/* My Name / Logo */
+
+/* Navigation bar */
+#header-nav-bar {
+	position: absolute;
+	right: 0;
+}
+#header-nav-bar ul {
+	list-style-type: none;
+	margin: 0;
+    padding: 0;
+}
+#header-nav-bar li {
+	float: right;
+}
+#header-nav-bar a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 15px;
+	margin-right: 15px;
+}
+#header-nav-bar a:hover {
+	background-color: rgba(25, 25, 25, .5);
+	opacity: 0.5;
+}
+/* ============================================================
+  MIDDLE SECTION
+============================================================ */
+#middle-container {
+	position: absolute;
+	width: 80%;
+	height: 90%;
+	top: 0;
+	bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#middle-content {
+	position: absolute;
+	width: 371px;
+	height: 144px;
+	top: 0;
+	bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+	text-align: center;
+
+}
+.button {
+	font-size: 16px;
+	padding: 10px 10px 10px 10px;
+	background-color: Transparent;
+}
+#middle-content ul {
+	list-style-type: none;
+	margin: 16px;
+    padding: 0;
+}
+#middle-content li {
+	display: inline-block;
+}
+#middle-content li button {
+    border: 1.5px solid #F2E7E4;
+		text-shadow: 0.2px 2px gray;
+}
+/* ============================================================
+  THE FOOTER
+============================================================ */
+footer {
+	width: 100%;
+	height: 90px;
+	position: absolute;
+	bottom: 0;
+	height: 49px;
+}
+/* ============================================================
+  Animated strikethrough
+============================================================ */
+.anim-strike {
+  position: relative;
+  color: #ff3296;
+}
+.anim-strike:after {
+  display: block;
+  position: absolute;
+  left: 17%;
+  right: 17%;
+  bottom: 21.7px;
+  width: 0;
+  height: 1.5px;
+  background-color: black;
+  content: "";
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.anim-strike:hover {
+  color: #98004a;
+}
+.anim-strike:hover:after {
+  width: 66%;
+}
