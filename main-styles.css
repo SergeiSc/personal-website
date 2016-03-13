@@ -152,9 +152,9 @@ footer {
   position: absolute;
   left: 17%;
   right: 17%;
-  bottom: 21.7px;
+  bottom: 21px;
   width: 0;
-  height: 1.5px;
+  height: 3px;
   background-color: black;
   content: "";
   -webkit-transition: all 0.2s;
@@ -166,5 +166,5 @@ footer {
   color: #98004a;
 }
 .anim-strike:hover:after {
-  width: 66%;
+  width: 70%;
 }
