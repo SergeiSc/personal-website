@@ -4,9 +4,12 @@
       <meta charset="utf-8">
       <title>Home</title>
       <link rel="stylesheet" href="main-styles.css" type="text/css">
+	<!--[if IE 8]> <body class="ie-bg"> <![endif]-->
+	<!--[if lte IE 7]> <body class="ie-bg"><p>You seem to be using an outdated browser. 
+	Please update to a newer version.</p></body> <div id="main-wrapper" style="display: none"><![endif]-->
    </head>
    <body>
-	<div class="bg-image"> <img src="dublin-blur6.jpg" id="bg" alt="" class="blur">
+	<div">
       <div id="main-wrapper">
          <header>
             <div id="header-nav-bar">
@@ -20,21 +23,24 @@
 		 
 		 <div id="middle-container">
 		 
-			<div class="mid-content active" id="home-panel">
+		 <!-- Home panel -->
+			<div class="mid-content active animate-opacity" id="home-panel">
 				<h1 class="text-colour">Sergey Sc</h1>
-				<p class="text-colour">Quality Assurance Engineer</p>
+				<p class="text-colour animate-opacity">Quality Assurance Engineer</p>
 				<ul>
 					<li><button class="button text-colour" onclick="location.href='#contact';">Contact</button></li>
 					<li><button class="button text-colour" onclick="location.href='#about';">About</button></li>
 				</ul>
 			</div>
 			
-			<div class="mid-content" id="about-panel">
+		<!-- About panel -->
+			<div class="mid-content animate-opacity" id="about-panel">
 				<h1 class="text-colour">About Me</h1>
 				<p>Une croissent employees tremblent mes attardent indicible. Pas pressaient republique des asiatiques. Sur passa crete etais car roidi. He vent avez ah ca ah suit. Entourage ere demeurons boulevard tangibles eux reveillez attelages. Servantes portieres consumait ame pic suffisait ressemble messieurs. </p>
 			</div>
 			
-			<div class="mid-content" id="contact-panel">
+		<!-- Contact panel -->
+			<div class="mid-content animate-opacity" id="contact-panel">
 				<h1 class="text-colour">Contact</h1>
 				<p class="text-colour">Email: abc@abc.com<br />Mobile: +353888888888</p>
 			</div>
@@ -46,8 +52,6 @@
          </footer>
       </div>
       <script type="text/javascript" src="js/jquery.js"></script>
-	  <script type="text/javascript" src="js/animation.js"></script>
-	  <script type="text/javascript" src="js/background.js"></script>
 	  <script type="text/javascript" src="js/displayContent.js"></script>
 	</div>
    </body>
