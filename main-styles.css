@@ -24,12 +24,15 @@ body {
 	font-size: 16px;
 	text-shadow: 0.2px 1.5px gray;
 }
-h1, p {
+h1, h2, p, a {
 	color: white;
 }
 h1 {
 	font-size: 37px;
-} 
+}
+h2 {
+	font-size: 28px;
+}
 p {
 	color: white;
 	font-size: 22px;
@@ -44,30 +47,30 @@ p {
   BACKGROUND
 ============================================================ */
 
-.bg-img1{	
-background: url(dublin-blur6.jpg) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+.bg-img1{
+	background: url(dublin-blur6.jpg) no-repeat center center fixed; 
 }
-.bg-img2{	
-background: url(dublin3-blur.jpg) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+/*
+.bg-img2{
+	background: url(dublin3-blur.jpg) no-repeat center center fixed; 
 }
-.bg-img3{	
-background: url(dublin2.jpg) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+.bg-img3{
+	background: url(dublin2.jpg) no-repeat center center fixed; 
 }
+*/
 .ie-bg {
 	background-color: #001b26;
 }
+.cover {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.crossfadeBg{
+	transition: background-image 2s ease-in-out;
+}
+
 /* ============================================================
   HEADER
 ============================================================ */
@@ -77,7 +80,16 @@ header {
 	width: 100%;
 }
 /* My Name / Logo */
-
+#logo {
+	position: absolute;
+	height: 100%;
+	text-align: center;
+}
+#logo a {
+	display: block;
+	text-decoration: none;
+	padding: 15px 15px 15px 15px;
+}
 /* Navigation bar */
 #header-nav-bar {
 	position: absolute;
@@ -116,8 +128,6 @@ header {
 }
 .mid-content {
 	position: absolute;
-	width: 841px;
-	height: 377px;
 	top: 0;
 	bottom: 0;
     left: 0;
@@ -125,6 +135,18 @@ header {
     margin: auto;
 	text-align: center;
 	display: none;
+}
+#home-panel {
+	width: 466px;
+	height: 200px;
+}
+#about-panel {
+	width: 900px;
+	height: 300px;
+}
+#contact-panel {
+	width: 600px;
+	height: 200px;
 }
 .button {
 	font-size: 16px;
@@ -148,8 +170,8 @@ header {
 	display: block;
 }
 .animate-opacity{
-	-webkit-animation:opac 1s;
-	animation:opac 1s
+	-webkit-animation: opac 1s;
+	animation: opac 1s
 }
 	@-webkit-keyframes opac{
 		from{opacity:0} to{opacity:1}
@@ -157,7 +179,6 @@ header {
 	@keyframes opac{
 		from{opacity:0} to{opacity:1}
 	}
-}
 /* ============================================================
   THE FOOTER
 ============================================================ */
