@@ -38,6 +38,9 @@ p {
 	font-size: 22px;
 	padding-top: 10px;
 }
+.def-cursor {
+	cursor: default;
+}
 #main-wrapper {
 	width: 100%;
 	position: absolute;
@@ -48,7 +51,7 @@ p {
 ============================================================ */
 
 .bg-img1{
-	background: url(dublin-blur6.jpg) no-repeat center center fixed; 
+	background: url(img/dublin-blur6.jpg) no-repeat center center fixed; 
 }
 /*
 .bg-img2{
@@ -94,6 +97,7 @@ header {
 #header-nav-bar {
 	position: absolute;
 	right: 0;
+	z-index: 1;
 }
 #header-nav-bar ul {
 	list-style-type: none;
@@ -147,6 +151,24 @@ header {
 #contact-panel {
 	width: 600px;
 	height: 200px;
+}
+#contact-panel a {
+	text-decoration:none;
+}
+.social-media-links {
+	
+}
+.social-media-links p {
+	display: inline-block;
+}
+.linkedin-icon {
+	position: absolute;
+    width: 29px;
+    height: 29px;
+    margin-top: 7px;
+}
+.margin-left {
+	margin-left: 37px;
 }
 .button {
 	font-size: 16px;
