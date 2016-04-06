@@ -7,7 +7,6 @@ $(window).load(function() {
 });
 
 function switchPanels(){
-	
 	switch(window.location.hash){	
 	case '#home' :
 		/*
@@ -17,6 +16,11 @@ function switchPanels(){
 
 		$('#home-panel').addClass('active');
   		$('#home-panel').siblings().removeClass('active');
+
+		$('.nav-home').addClass('activeLink');
+		$('.nav-contact').removeClass('activeLink');
+		$('.nav-about').removeClass('activeLink');
+		
 		break;
 	case '#about' :
 		/*
@@ -26,6 +30,11 @@ function switchPanels(){
 
 		$('#about-panel').addClass('active');
   		$('#about-panel').siblings().removeClass('active');
+
+		$('.nav-about').addClass('activeLink');
+		$('.nav-home').removeClass('activeLink');
+		$('.nav-contact').removeClass('activeLink');
+
 		break;
 	case '#contact' :
 		/*
@@ -35,7 +44,13 @@ function switchPanels(){
 
 		$('#contact-panel').addClass('active');
   		$('#contact-panel').siblings().removeClass('active');
+
+		$('.nav-contact').addClass('activeLink');
+		$('.nav-home').removeClass('activeLink');
+		$('.nav-about').removeClass('activeLink');
+
 		break;
+	default :
+		window.location.hash = '#home';
 	}
-	
 }

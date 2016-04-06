@@ -7,17 +7,27 @@
 	<!--[if IE 8]> <body class="ie-bg"> <![endif]-->
 	<!--[if lte IE 7]> <body class="ie-bg"><p>You seem to be using an outdated browser. 
 	Please update to a newer version.</p></body> <div id="main-wrapper" style="display: none"><![endif]-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-76032756-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
    </head>
-   <body class="bg-img1 cover crossfadeBg">
+   <body class="bg-img1 cover">
 	<div>
       <div id="main-wrapper">
          <header>
 		 <div id="logo"> <a href="#home">Sergejs Scukins</a></div>
             <div id="header-nav-bar">
 				<ul>
-					<li><a class="anim-strike" href="#contact">Contact</a></li>
-					<li><a class="anim-strike" href="#about">About</a></li>
-					<li><a class="anim-strike" href="#home">Home</a></li>
+					<li><a class="nav-contact anim-strike" href="#contact">Contact</a></li>
+					<li><a class="nav-about anim-strike" href="#about">About</a></li>
+					<li><a class="nav-home anim-strike" href="#home">Home</a></li>
 				</ul>
 			</div>
          </header>
@@ -46,10 +56,10 @@
 				<h1>Contact</h1>
 				<p><span class="def-cursor">Email: </span><a href="mailto:example@hotmail.com">example@hotmail.com</a> <br /><span class="def-cursor">Mobile: +353</span></p>
 				<div class="social-media-links">
-					<a href="https://ie.linkedin.com/in/sergejssc" target="_blank">
-						<p>My Linked</p><img class="linkedin-icon" onMouseOver="iconHover(this)" 
-							onMouseOut="icon(this)" alt="LinkedIn" src="img/social/in.png"><p class="margin-left"> profile</p>
-					</a>
+					<a onMouseOver="iconHover(.linkedin-icon)" 
+						onMouseOut="icon(.linkedin-icon)" href="https://ie.linkedin.com/in/sergejssc" target="_blank">
+					<p>My Linked</p><img class="linkedin-icon" onMouseOver="iconHover(this)" 
+						onMouseOut="icon(this)" alt="LinkedIn" src="img/social/in.png"><p class="margin-left"> profile</p></a>
 				</div>
 			</div>
 			
